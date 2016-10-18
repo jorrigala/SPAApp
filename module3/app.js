@@ -34,7 +34,6 @@
 					url: (" https://davids-restaurant.herokuapp.com/menu_items.json")
 				}).then(function(result){
 					var foundItems = [];
-					console.log(result);
 					angular.forEach(result.data.menu_items, function(value, key) {
 					  if(value.description.indexOf(searchTerm)>=0){
 					  	this.push(value);
