@@ -1,4 +1,5 @@
 <p ng-repeat="item in items" class="col-xs-12">
 <span class="col-xs-1">{{item.short_name}}</span><span class="col-xs-8"> {{item.description}}</span>
-	<span class="col-xs-1"><button ng-click="remove({index: $index});" class="btn btn-primary btn-xs">Remove Item </button></span>
+	<span class="col-xs-1"><button ng-click="remove({index: $index});" class="btn btn-primary btn-xs">Don't want this one! </button></span>
 </p>
+<p ng-if="items.length == 0" class="col-xs-12 alert alert-danger">Nothing found</p>
